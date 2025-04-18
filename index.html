@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>jobless.fun</title>
   <style>
     * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -47,133 +47,121 @@
   <h1>jobless.fun</h1>
   <div class="tabs">
     <button class="tab-btn active" onclick="switchTab(0)">Mood</button>
-    <button class="tab-btn" onclick="switchTab(1)">Ne Yapsam?</button>
-    <button class="tab-btn" onclick="switchTab(2)">Gerçek</button>
-    <button class="tab-btn" onclick="switchTab(3)">İlham</button>
+    <button class="tab-btn" onclick="switchTab(1)">What To Do?</button>
+    <button class="tab-btn" onclick="switchTab(2)">Fact</button>
+    <button class="tab-btn" onclick="switchTab(3)">Inspiration</button>
     <button class="tab-btn" onclick="switchTab(4)">Prompt</button>
     <button class="tab-btn" onclick="switchTab(5)">Emoji</button>
-    <button class="tab-btn" onclick="switchTab(6)">Tatlı Not</button>
-    <button class="tab-btn" onclick="switchTab(7)">Taş-Kağıt-Makas</button>
-    <button class="tab-btn" onclick="switchTab(8)">Kehanet</button>
-    <button class="tab-btn" onclick="switchTab(9)">Renk Paleti</button>
-    <button class="tab-btn" onclick="switchTab(10)">Günlük Başlığı</button>
+    <button class="tab-btn" onclick="switchTab(6)">Sweet Note</button>
+    <button class="tab-btn" onclick="switchTab(7)">Rock Paper Scissors</button>
+    <button class="tab-btn" onclick="switchTab(8)">Fortune</button>
+    <button class="tab-btn" onclick="switchTab(9)">Color Palette</button>
+    <button class="tab-btn" onclick="switchTab(10)">Journal Title</button>
   </div>
 
   <!-- Mood -->
   <div class="tab-content active">
     <h2>Aesthetic Mood Generator</h2>
     <p id="moodText"></p>
-    <button class="action" onclick="generateText('mood')">Nasıl Hissediyorum?</button>
+    <button class="action" onclick="generateText('mood')">How Do I Feel?</button>
   </div>
 
-  <!-- Ne Yapsam? -->
+  <!-- What to do -->
   <div class="tab-content">
-    <h2>Bugün Ne Yapsam?</h2>
+    <h2>What Should I Do Today?</h2>
     <p id="ideaText"></p>
-    <button class="action" onclick="generateText('idea')">Tıkla ve Öğren!</button>
+    <button class="action" onclick="generateText('idea')">Click and See!</button>
   </div>
 
-  <!-- Gerçek -->
+  <!-- Fact -->
   <div class="tab-content">
-    <h2>Rastgele Gerçek</h2>
+    <h2>Random Fact</h2>
     <p id="factText"></p>
-    <button class="action" onclick="generateText('fact')">Gerçek Göster</button>
+    <button class="action" onclick="generateText('fact')">Show Me a Fact</button>
   </div>
 
-  <!-- İlham -->
+  <!-- Inspiration -->
   <div class="tab-content">
-    <h2>Estetik İlham</h2>
+    <h2>Aesthetic Inspiration</h2>
     <p id="inspoText"></p>
-    <button class="action" onclick="generateText('inspo')">İlham Ver</button>
+    <button class="action" onclick="generateText('inspo')">Give Inspiration</button>
   </div>
 
   <!-- Prompt -->
   <div class="tab-content">
-    <h2>Yaratıcı Prompt</h2>
+    <h2>Creative Prompt</h2>
     <p id="promptText"></p>
-    <button class="action" onclick="generateText('prompt')">Prompt Oluştur</button>
+    <button class="action" onclick="generateText('prompt')">Generate Prompt</button>
   </div>
 
   <!-- Emoji -->
   <div class="tab-content">
-    <h2>Emoji Tavrı</h2>
+    <h2>Emoji Vibe</h2>
     <p id="emojiText"></p>
-    <button class="action" onclick="generateText('emoji')">Bir Emoji Seç!</button>
+    <button class="action" onclick="generateText('emoji')">Pick an Emoji!</button>
   </div>
 
-  <!-- Tatlı Not -->
+  <!-- Sweet Note -->
   <div class="tab-content">
-    <h2>Tatlı Bir Not</h2>
+    <h2>Sweet Note</h2>
     <p id="noteText"></p>
-    <button class="action" onclick="generateText('note')">Not Oku</button>
+    <button class="action" onclick="generateText('note')">Read a Note</button>
   </div>
 
-  <!-- Taş-Kağıt-Makas -->
+  <!-- RPS -->
   <div class="tab-content">
-    <h2>Taş-Kağıt-Makas</h2>
+    <h2>Rock Paper Scissors</h2>
     <div id="gameResult"></div>
-    <button class="choice" onclick="playRPS('Taş')">✊ Taş</button>
-    <button class="choice" onclick="playRPS('Kağıt')">✋ Kağıt</button>
-    <button class="choice" onclick="playRPS('Makas')">✌️ Makas</button>
+    <button class="choice" onclick="playRPS('Rock')">✊ Rock</button>
+    <button class="choice" onclick="playRPS('Paper')">✋ Paper</button>
+    <button class="choice" onclick="playRPS('Scissors')">✌️ Scissors</button>
   </div>
 
-  <!-- Kehanet -->
+  <!-- Fortune -->
   <div class="tab-content">
-    <h2>Günün Kehaneti</h2>
+    <h2>Daily Fortune</h2>
     <p id="fortuneText"></p>
-    <button class="action" onclick="generateText('fortune')">Kehanetimi Göster</button>
+    <button class="action" onclick="generateText('fortune')">Reveal My Fortune</button>
   </div>
 
-  <!-- Renk Paleti -->
+  <!-- Palette -->
   <div class="tab-content">
-    <h2>Renk Paleti Üretici</h2>
+    <h2>Color Palette Generator</h2>
     <p id="paletteText"></p>
-    <button class="action" onclick="generateText('palette')">Yeni Palet</button>
+    <button class="action" onclick="generateText('palette')">New Palette</button>
   </div>
 
-  <!-- Günlük Başlığı -->
+  <!-- Journal -->
   <div class="tab-content">
-    <h2>Günlük Yazı Başlığı</h2>
+    <h2>Journal Title</h2>
     <p id="journalText"></p>
-    <button class="action" onclick="generateText('journal')">Başlık Oluştur</button>
+    <button class="action" onclick="generateText('journal')">Create a Title</button>
   </div>
 
   <div class="footer">created by jobless</div>
 
   <script>
-    // Tab geçiş
     function switchTab(i) {
       document.querySelectorAll('.tab-btn').forEach((b,j)=>b.classList.toggle('active', i===j));
       document.querySelectorAll('.tab-content').forEach((c,j)=>c.classList.toggle('active', i===j));
     }
 
-    // Kelime havuzları (mood ve fortune genişletildi)
     const pools = {
-      mood: [
-        "sakin","heyecanlı","huzurlu","melankolik","neşeli","dalgalı",
-        "serin","sıcak","minimal","gizemli","pastel","retro","fütüristik",
-        "nostaljik","cozy","enerjik","dramatic","romantik","aktif","dersaadet"
-      ],
-      idea: ["kırtasiye","piknik","yürüyüş","fotoğraf","çizim","yemek","kodlama","yoga","meditasyon","film","kitap","müzik","dans","yazı","bulmaca","bahçe"],
-      fact: ["salyangoz","uzay","derinlik","atom","evren","ağaç","okyanus","dağ","insan beyni","kelebek","karadelik","bakteri","yıldız","wolfram","mikrop"],
-      inspo: ["renk","desen","tipografi","doku","ışık","gölge","kompozisyon","denge","uyum","kontrast","hareket","sinema","sanat","geometri","organik"],
-      prompt: ["karakter","gizem","macera","duygu","yer","zaman","karşılaşma","sır","keşif","dönüşüm","kapı","ayna","mesaj","gezegen","hayalet"],
+      mood: ["calm","excited","peaceful","melancholy","cheerful","moody","cool","warm","minimal","mysterious","pastel","retro","futuristic","nostalgic","cozy","energetic","dramatic","romantic","active","serene"],
+      idea: ["stationery","picnic","walk","photography","drawing","cooking","coding","yoga","meditation","movie","book","music","dancing","writing","puzzle","gardening"],
+      fact: ["snail","space","depth","atom","universe","tree","ocean","mountain","brain","butterfly","black hole","bacteria","star","wolfram","microbe"],
+      inspo: ["color","pattern","typography","texture","light","shadow","composition","balance","harmony","contrast","movement","cinema","art","geometry","organic"],
+      prompt: ["character","mystery","adventure","emotion","place","time","encounter","secret","discovery","transformation","door","mirror","message","planet","ghost"],
       emoji: ["😊","😎","🥳","🚀","🌟","🔥","🍀","🎉","💖","🌈","🍓","🐱","🦄","🤖","🍄"],
-      note: ["sabır","umut","güç","ilham","hayal","dostluk","sevgi","özgürlük","yaratıcı","öğrenme","keşfetme","düşünme","paylaşma","çekinme","gülümseme"],
-      fortune: [
-        "fırsat","sürpriz","dostluk","başarı","denge","değişim","macera",
-        "huzur","enerji","yaratıcı","cesaret","mutluluk","ışık",
-        "öğrenme","keşif","dönüşüm","umut","uzay","orman","şehir",
-        "deniz","rüya","ritim"
-      ],
+      note: ["patience","hope","strength","inspiration","dream","friendship","love","freedom","creativity","learning","exploring","thinking","sharing","smile","trust"],
+      fortune: ["opportunity","surprise","friendship","success","balance","change","adventure","peace","energy","creative","courage","happiness","light","learning","discovery","transformation","hope","space","forest","city","sea","dream","rhythm"],
       palette: ["#ff6f61","#6b5b95","#feb236","#d64161","#6b4226","#f0a6ca","#6b8e23","#4b0082","#20b2aa","#dda0dd"],
-      journal: ["hikâye","an","düş","günlük","anı","seyahat","keşif","duygu","yol","serüven","anımsama","görüş","seçim","düşünce","fısıltı"]
+      journal: ["story","moment","dream","daily","memory","journey","discovery","emotion","road","adventure","recall","perspective","choice","thought","whisper"]
     };
 
-    // Cümle oluşturucu
     function makeSentence(type) {
       const arr = pools[type];
-      const count = 5 + Math.floor(Math.random()*6); // 5–10 kelime
+      const count = 5 + Math.floor(Math.random()*6);
       let words = [];
       for (let i=0; i<count; i++) {
         words.push(arr[Math.floor(Math.random()*arr.length)]);
@@ -182,27 +170,25 @@
       return txt.charAt(0).toUpperCase() + txt.slice(1) + '.';
     }
 
-    // Metin üret
     function generateText(type) {
       if (type === 'palette') {
         const sent = makeSentence('palette');
         document.getElementById('paletteText').innerText = sent;
-        const color = sent.match(/#\w{6}/)[0];
-        document.body.style.background = color;
+        const color = sent.match(/#\w{6}/);
+        if (color) document.body.style.background = color[0];
       } else {
         document.getElementById(type + 'Text').innerText = makeSentence(type);
       }
     }
 
-    // Taş-Kağıt-Makas (kullanıcı seçimi)
     function playRPS(user) {
-      const opts = ['Taş','Kağıt','Makas'];
+      const opts = ['Rock','Paper','Scissors'];
       const bot = opts[Math.floor(Math.random()*3)];
-      let res = user === bot ? 'Beraberlik!' :
-                (user==='Taş'&&bot==='Makas'||user==='Kağıt'&&bot==='Taş'||user==='Makas'&&bot==='Kağıt')
-                ? 'Kazandın!' : 'Kaybettin!';
+      let res = user === bot ? 'Draw!' :
+                (user==='Rock'&&bot==='Scissors'||user==='Paper'&&bot==='Rock'||user==='Scissors'&&bot==='Paper')
+                ? 'You win!' : 'You lose!';
       document.getElementById('gameResult').innerText =
-        `Sen: ${user}\nBot: ${bot}\nSonuç: ${res}`;
+        `You: ${user}\nBot: ${bot}\nResult: ${res}`;
     }
   </script>
 </body>
