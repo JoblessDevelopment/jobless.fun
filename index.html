@@ -8,32 +8,34 @@
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #f6d365 0%, #fda085 100%);
-      color: #333;
+      background: linear-gradient(135deg, #8e44ad 0%, #2c3e50 100%);
+      color: #fff;
       display: flex;
       flex-direction: column;
       align-items: center;
       min-height: 100vh;
     }
-    h1 { font-size: 2.5rem; margin: 2rem 0; }
+    h1 { font-size: 2.5rem; margin: 2rem 0; color: white; }
     .tabs { display: flex; flex-wrap: wrap; gap: 10px; justify-content: center; margin-bottom: 2rem; }
     .tab-btn {
       padding: 10px 20px; border: none; border-radius: 10px;
-      background-color: #ffe4c4; cursor: pointer; transition: .3s;
+      background-color: #4e2a84; cursor: pointer; transition: .3s;
+      color: white;
     }
-    .tab-btn.active, .tab-btn:hover { background-color: #ffcc99; }
+    .tab-btn.active, .tab-btn:hover { background-color: #5c3d91; }
     .tab-content {
-      display: none; max-width: 600px; background: white; padding: 2rem;
+      display: none; max-width: 600px; background: #34495e; padding: 2rem;
       border-radius: 20px; box-shadow: 0 0 20px rgba(0,0,0,0.1);
       text-align: center;
+      color: white;
     }
     .tab-content.active { display: block; }
     button.action, button.choice {
       margin: 0.5rem; padding: 10px 20px; font-size: 1rem;
-      border: none; border-radius: 10px; background-color: #ffb347;
+      border: none; border-radius: 10px; background-color: #8e44ad;
       color: white; cursor: pointer; transition: .3s;
     }
-    button.action:hover, button.choice:hover { background-color: #ff944d; }
+    button.action:hover, button.choice:hover { background-color: #9b59b6; }
     .footer {
       margin-top: 3rem;
       font-size: 0.9rem;
